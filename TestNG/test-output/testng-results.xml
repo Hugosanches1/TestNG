@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="8" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite de TestNG" duration-ms="95" started-at="2021-01-02T20:46:43 BRT" finished-at="2021-01-02T20:46:43 BRT">
+    <groups>
+      <group name="primarios">
+        <method signature="Testes.teste4()[pri:0, instance:br.com.projeto.tests.Testes@4b1c1ea0]" name="teste4" class="br.com.projeto.tests.Testes"/>
+      </group> <!-- primarios -->
+      <group name="funcional">
+        <method signature="Testes.teste2()[pri:0, instance:br.com.projeto.tests.Testes@4b1c1ea0]" name="teste2" class="br.com.projeto.tests.Testes"/>
+      </group> <!-- funcional -->
+      <group name="testeNaoFuncional">
+        <method signature="Testes.teste1()[pri:0, instance:br.com.projeto.tests.Testes@4b1c1ea0]" name="teste1" class="br.com.projeto.tests.Testes"/>
+        <method signature="Testes.teste2()[pri:0, instance:br.com.projeto.tests.Testes@4b1c1ea0]" name="teste2" class="br.com.projeto.tests.Testes"/>
+        <method signature="Testes.teste4()[pri:0, instance:br.com.projeto.tests.Testes@4b1c1ea0]" name="teste4" class="br.com.projeto.tests.Testes"/>
+      </group> <!-- testeNaoFuncional -->
+      <group name="unitarios">
+        <method signature="TesteClasse2.teste1Classe2()[pri:0, instance:br.com.projeto.tests.TesteClasse2@17579e0f]" name="teste1Classe2" class="br.com.projeto.tests.TesteClasse2"/>
+        <method signature="TesteClasse2.teste2Classe2()[pri:0, instance:br.com.projeto.tests.TesteClasse2@17579e0f]" name="teste2Classe2" class="br.com.projeto.tests.TesteClasse2"/>
+        <method signature="Testes.teste1()[pri:0, instance:br.com.projeto.tests.Testes@4b1c1ea0]" name="teste1" class="br.com.projeto.tests.Testes"/>
+      </group> <!-- unitarios -->
+      <group name="integração">
+        <method signature="TesteClasse2.teste3Classe2()[pri:0, instance:br.com.projeto.tests.TesteClasse2@17579e0f]" name="teste3Classe2" class="br.com.projeto.tests.TesteClasse2"/>
+        <method signature="TesteClasse2.teste4Classe2()[pri:0, instance:br.com.projeto.tests.TesteClasse2@17579e0f]" name="teste4Classe2" class="br.com.projeto.tests.TesteClasse2"/>
+      </group> <!-- integração -->
+      <group name="testeFuncional">
+        <method signature="TesteClasse2.teste1Classe2()[pri:0, instance:br.com.projeto.tests.TesteClasse2@17579e0f]" name="teste1Classe2" class="br.com.projeto.tests.TesteClasse2"/>
+        <method signature="TesteClasse2.teste2Classe2()[pri:0, instance:br.com.projeto.tests.TesteClasse2@17579e0f]" name="teste2Classe2" class="br.com.projeto.tests.TesteClasse2"/>
+        <method signature="TesteClasse2.teste3Classe2()[pri:0, instance:br.com.projeto.tests.TesteClasse2@17579e0f]" name="teste3Classe2" class="br.com.projeto.tests.TesteClasse2"/>
+        <method signature="TesteClasse2.teste4Classe2()[pri:0, instance:br.com.projeto.tests.TesteClasse2@17579e0f]" name="teste4Classe2" class="br.com.projeto.tests.TesteClasse2"/>
+      </group> <!-- testeFuncional -->
+    </groups>
+    <test name="Plano de test de grupos" duration-ms="95" started-at="2021-01-02T20:46:43 BRT" finished-at="2021-01-02T20:46:43 BRT">
+      <class name="br.com.projeto.tests.Testes">
+        <test-method status="PASS" signature="antesTodosTestes()[pri:0, instance:br.com.projeto.tests.Testes@4b1c1ea0]" name="antesTodosTestes" is-config="true" duration-ms="12" started-at="2021-01-02T20:46:43 BRT" finished-at="2021-01-02T20:46:43 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- antesTodosTestes -->
+        <test-method status="PASS" signature="antesClasse()[pri:0, instance:br.com.projeto.tests.Testes@4b1c1ea0]" name="antesClasse" is-config="true" duration-ms="0" started-at="2021-01-02T20:46:43 BRT" finished-at="2021-01-02T20:46:43 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- antesClasse -->
+        <test-method status="PASS" signature="antesMetodo()[pri:0, instance:br.com.projeto.tests.Testes@4b1c1ea0]" name="antesMetodo" is-config="true" duration-ms="0" started-at="2021-01-02T20:46:43 BRT" finished-at="2021-01-02T20:46:43 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- antesMetodo -->
+        <test-method status="PASS" signature="teste1()[pri:0, instance:br.com.projeto.tests.Testes@4b1c1ea0]" name="teste1" duration-ms="1" started-at="2021-01-02T20:46:43 BRT" finished-at="2021-01-02T20:46:43 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teste1 -->
+        <test-method status="PASS" signature="depoisMetodo()[pri:0, instance:br.com.projeto.tests.Testes@4b1c1ea0]" name="depoisMetodo" is-config="true" duration-ms="0" started-at="2021-01-02T20:46:43 BRT" finished-at="2021-01-02T20:46:43 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- depoisMetodo -->
+        <test-method status="PASS" signature="antesMetodo()[pri:0, instance:br.com.projeto.tests.Testes@4b1c1ea0]" name="antesMetodo" is-config="true" duration-ms="1" started-at="2021-01-02T20:46:43 BRT" finished-at="2021-01-02T20:46:43 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- antesMetodo -->
+        <test-method status="PASS" signature="teste2()[pri:0, instance:br.com.projeto.tests.Testes@4b1c1ea0]" name="teste2" duration-ms="2" started-at="2021-01-02T20:46:43 BRT" finished-at="2021-01-02T20:46:43 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teste2 -->
+        <test-method status="PASS" signature="depoisMetodo()[pri:0, instance:br.com.projeto.tests.Testes@4b1c1ea0]" name="depoisMetodo" is-config="true" duration-ms="0" started-at="2021-01-02T20:46:43 BRT" finished-at="2021-01-02T20:46:43 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- depoisMetodo -->
+        <test-method status="PASS" signature="antesMetodo()[pri:0, instance:br.com.projeto.tests.Testes@4b1c1ea0]" name="antesMetodo" is-config="true" duration-ms="0" started-at="2021-01-02T20:46:43 BRT" finished-at="2021-01-02T20:46:43 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- antesMetodo -->
+        <test-method status="PASS" signature="teste4()[pri:0, instance:br.com.projeto.tests.Testes@4b1c1ea0]" name="teste4" duration-ms="1" started-at="2021-01-02T20:46:43 BRT" finished-at="2021-01-02T20:46:43 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teste4 -->
+        <test-method status="PASS" signature="depoisMetodo()[pri:0, instance:br.com.projeto.tests.Testes@4b1c1ea0]" name="depoisMetodo" is-config="true" duration-ms="1" started-at="2021-01-02T20:46:43 BRT" finished-at="2021-01-02T20:46:43 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- depoisMetodo -->
+        <test-method status="PASS" signature="depoisClasse()[pri:0, instance:br.com.projeto.tests.Testes@4b1c1ea0]" name="depoisClasse" is-config="true" duration-ms="0" started-at="2021-01-02T20:46:43 BRT" finished-at="2021-01-02T20:46:43 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- depoisClasse -->
+        <test-method status="PASS" signature="depoisTodosTestes()[pri:0, instance:br.com.projeto.tests.Testes@4b1c1ea0]" name="depoisTodosTestes" is-config="true" duration-ms="0" started-at="2021-01-02T20:46:43 BRT" finished-at="2021-01-02T20:46:43 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- depoisTodosTestes -->
+      </class> <!-- br.com.projeto.tests.Testes -->
+      <class name="br.com.projeto.tests.TesteClasse2">
+        <test-method status="PASS" signature="antesClasse()[pri:0, instance:br.com.projeto.tests.TesteClasse2@17579e0f]" name="antesClasse" is-config="true" duration-ms="0" started-at="2021-01-02T20:46:43 BRT" finished-at="2021-01-02T20:46:43 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- antesClasse -->
+        <test-method status="PASS" signature="teste1Classe2()[pri:0, instance:br.com.projeto.tests.TesteClasse2@17579e0f]" name="teste1Classe2" duration-ms="6" started-at="2021-01-02T20:46:43 BRT" finished-at="2021-01-02T20:46:43 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teste1Classe2 -->
+        <test-method status="PASS" signature="teste2Classe2()[pri:0, instance:br.com.projeto.tests.TesteClasse2@17579e0f]" name="teste2Classe2" duration-ms="2" started-at="2021-01-02T20:46:43 BRT" finished-at="2021-01-02T20:46:43 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teste2Classe2 -->
+        <test-method status="PASS" signature="teste3Classe2()[pri:0, instance:br.com.projeto.tests.TesteClasse2@17579e0f]" name="teste3Classe2" duration-ms="1" started-at="2021-01-02T20:46:43 BRT" finished-at="2021-01-02T20:46:43 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teste3Classe2 -->
+        <test-method status="PASS" signature="teste4Classe2()[pri:0, instance:br.com.projeto.tests.TesteClasse2@17579e0f]" name="teste4Classe2" duration-ms="1" started-at="2021-01-02T20:46:43 BRT" finished-at="2021-01-02T20:46:43 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teste4Classe2 -->
+        <test-method status="PASS" signature="depoisClasse()[pri:0, instance:br.com.projeto.tests.TesteClasse2@17579e0f]" name="depoisClasse" is-config="true" duration-ms="1" started-at="2021-01-02T20:46:43 BRT" finished-at="2021-01-02T20:46:43 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- depoisClasse -->
+      </class> <!-- br.com.projeto.tests.TesteClasse2 -->
+    </test> <!-- Plano de test de grupos -->
+  </suite> <!-- Suite de TestNG -->
+</testng-results>
