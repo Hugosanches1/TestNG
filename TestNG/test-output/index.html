@@ -61,7 +61,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Suite_de_TestNG">
-                    <span>6 groups</span>
+                    <span>13 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">11 methods,   11 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,6 +102,11 @@
                       <a href="#" panel-name="suite-Suite_de_TestNG" class="show-methods passed suite-Suite_de_TestNG"> (show)</a> <!-- show-methods passed suite-Suite_de_TestNG -->
                     </span>
                     <div class="method-list-content passed suite-Suite_de_TestNG">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_de_TestNG" title="br.com.projeto.testesRetorno.TestesRetorno" hash-for-method="saudacao">saudacao</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite_de_TestNG" title="br.com.projeto.tests.Testes" hash-for-method="teste1">teste1</a> <!-- method navigator-link -->
@@ -129,12 +134,27 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_de_TestNG" title="br.com.projeto.testesRetorno.TestesRetorno" hash-for-method="teste3classeRetorno">teste3classeRetorno</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite_de_TestNG" title="br.com.projeto.tests.Testes" hash-for-method="teste4">teste4</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite_de_TestNG" title="br.com.projeto.tests.TesteClasse2" hash-for-method="teste4Classe2">teste4Classe2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_de_TestNG" title="br.com.projeto.testesRetorno.TestesRetorno" hash-for-method="teste4classeRetorno">teste4classeRetorno</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_de_TestNG" title="br.com.projeto.testesRetorno.TestesRetorno" hash-for-method="verdadeiroFalso">verdadeiroFalso</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite_de_TestNG -->
@@ -174,6 +194,42 @@
                   <a name="teste4">
                   </a> <!-- teste4 -->
                   <span class="method-name">teste4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite_de_TestNG-class-passed -->
+          <div class="suite-Suite_de_TestNG-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">br.com.projeto.testesRetorno.TestesRetorno</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="saudacao">
+                  </a> <!-- saudacao -->
+                  <span class="method-name">saudacao</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="teste3classeRetorno">
+                  </a> <!-- teste3classeRetorno -->
+                  <span class="method-name">teste3classeRetorno</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="teste4classeRetorno">
+                  </a> <!-- teste4classeRetorno -->
+                  <span class="method-name">teste4classeRetorno</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verdadeiroFalso">
+                  </a> <!-- verdadeiroFalso -->
+                  <span class="method-name">verdadeiroFalso</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -223,24 +279,34 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite de TestNG&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Plano de test de grupos&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite de TestNG&quot; allow-return-values=&quot;true&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Regressao&quot;&gt;
     &lt;groups&gt;
+      &lt;define name=&quot;testes-normais&quot;&gt;
+        &lt;include name=&quot;testes-unitario&quot;/&gt;
+      &lt;/define&gt; &lt;!-- testes-normais --&gt;
+      &lt;define name=&quot;outros-testes&quot;&gt;
+        &lt;include name=&quot;.*uncional&quot;/&gt;
+        &lt;include name=&quot;.*integracao&quot;/&gt;
+      &lt;/define&gt; &lt;!-- outros-testes --&gt;
+      &lt;define name=&quot;todos-testes&quot;&gt;
+        &lt;include name=&quot;testes-normais&quot;/&gt;
+        &lt;include name=&quot;outros-testes&quot;/&gt;
+      &lt;/define&gt; &lt;!-- todos-testes --&gt;
       &lt;run&gt;
-        &lt;include name=&quot;test.*&quot;/&gt;
+        &lt;include name=&quot;todos-testes&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;packages&gt;
-      &lt;package name=&quot;br.com.projeto.tests&quot;/&gt;
-      &lt;package name=&quot;br.com.projeto.tests&quot;/&gt;
+      &lt;package name=&quot;br.com.projeto.*&quot;/&gt;
     &lt;/packages&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;br.com.projeto.testesRetorno.TestesRetorno&quot;/&gt;
       &lt;class name=&quot;br.com.projeto.tests.TesteClasse2&quot;/&gt;
       &lt;class name=&quot;br.com.projeto.tests.Testes&quot;/&gt;
-      &lt;class name=&quot;br.com.projeto.tests.TesteClasse2&quot;/&gt;
-      &lt;class name=&quot;br.com.projeto.tests.Testes&quot;/&gt;
+      &lt;class name=&quot;br.com.projeto.testsNovos.Pacote2Teste1&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Plano de test de grupos --&gt;
+  &lt;/test&gt; &lt;!-- Regressao --&gt;
 &lt;/suite&gt; &lt;!-- Suite de TestNG --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -252,7 +318,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Plano de test de grupos (4 classes)</span>
+                <span class="test-name">Regressao (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -263,10 +329,30 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
+              <span class="test-group-name">boolenano</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verdadeiroFalso</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
               <span class="test-group-name">funcional</span>
               <br/>
               <div class="method-in-group">
                 <span class="method-in-group-name">teste2</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">integracao</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">teste4classeRetorno</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verdadeiroFalso</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -287,6 +373,14 @@
               <br/>
               <div class="method-in-group">
                 <span class="method-in-group-name">teste4</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">retorno</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">saudacao</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -327,6 +421,58 @@
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
             <div class="test-group">
+              <span class="test-group-name">testes-retorno</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">saudacao</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">teste3classeRetorno</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">teste4classeRetorno</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verdadeiroFalso</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">testes-unitario</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">saudacao</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">teste3classeRetorno</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">teste4classeRetorno</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verdadeiroFalso</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">unitario</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">saudacao</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">teste3classeRetorno</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
               <span class="test-group-name">unitarios</span>
               <br/>
               <div class="method-in-group">
@@ -339,6 +485,18 @@
               </div> <!-- method-in-group -->
               <div class="method-in-group">
                 <span class="method-in-group-name">teste2Classe2</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">void</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">teste3classeRetorno</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">teste4classeRetorno</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -358,40 +516,56 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(11);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'teste1Classe2')
-data.setCell(0, 2, 'br.com.projeto.tests.TesteClasse2')
-data.setCell(0, 3, 6);
+data.setCell(0, 1, 'saudacao')
+data.setCell(0, 2, 'br.com.projeto.testesRetorno.TestesRetorno')
+data.setCell(0, 3, 7);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'teste2')
-data.setCell(1, 2, 'br.com.projeto.tests.Testes')
-data.setCell(1, 3, 2);
+data.setCell(1, 1, 'teste2Classe2')
+data.setCell(1, 2, 'br.com.projeto.tests.TesteClasse2')
+data.setCell(1, 3, 3);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'teste2Classe2')
-data.setCell(2, 2, 'br.com.projeto.tests.TesteClasse2')
-data.setCell(2, 3, 2);
+data.setCell(2, 1, 'teste4classeRetorno')
+data.setCell(2, 2, 'br.com.projeto.testesRetorno.TestesRetorno')
+data.setCell(2, 3, 3);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'teste3Classe2')
-data.setCell(3, 2, 'br.com.projeto.tests.TesteClasse2')
-data.setCell(3, 3, 1);
+data.setCell(3, 1, 'teste4')
+data.setCell(3, 2, 'br.com.projeto.tests.Testes')
+data.setCell(3, 3, 3);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'teste4Classe2')
 data.setCell(4, 2, 'br.com.projeto.tests.TesteClasse2')
-data.setCell(4, 3, 1);
+data.setCell(4, 3, 2);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'teste1')
-data.setCell(5, 2, 'br.com.projeto.tests.Testes')
-data.setCell(5, 3, 1);
+data.setCell(5, 1, 'verdadeiroFalso')
+data.setCell(5, 2, 'br.com.projeto.testesRetorno.TestesRetorno')
+data.setCell(5, 3, 2);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'teste4')
-data.setCell(6, 2, 'br.com.projeto.tests.Testes')
-data.setCell(6, 3, 1);
+data.setCell(6, 1, 'teste3classeRetorno')
+data.setCell(6, 2, 'br.com.projeto.testesRetorno.TestesRetorno')
+data.setCell(6, 3, 2);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'teste1Classe2')
+data.setCell(7, 2, 'br.com.projeto.tests.TesteClasse2')
+data.setCell(7, 3, 2);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'teste3Classe2')
+data.setCell(8, 2, 'br.com.projeto.tests.TesteClasse2')
+data.setCell(8, 3, 2);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'teste1')
+data.setCell(9, 2, 'br.com.projeto.tests.Testes')
+data.setCell(9, 3, 2);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'teste2')
+data.setCell(10, 2, 'br.com.projeto.tests.Testes')
+data.setCell(10, 3, 1);
 window.suiteTableData['Suite_de_TestNG']= { tableData: data, tableDiv: 'times-div-Suite_de_TestNG'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 ms</span>
+              <span class="suite-total-time">Total running time: 29 ms</span>
               <div id="times-div-Suite_de_TestNG">
               </div> <!-- times-div-Suite_de_TestNG -->
             </div> <!-- times-div -->
@@ -406,13 +580,26 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite_de_TestNG" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">5 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">br.com.projeto.tests.Testes</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">teste3</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">br.com.projeto.testsNovos.Pacote2Teste1</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">pacote2Teste4</span>
+                <br/>
+                <span class="ignored-method-name">pacote2Teste1</span>
+                <br/>
+                <span class="ignored-method-name">pacote2Teste2</span>
+                <br/>
+                <span class="ignored-method-name">pacote2Teste3</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -431,81 +618,100 @@ return data;
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
+              <div class="chronological-class-name">br.com.projeto.testesRetorno.TestesRetorno</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">saudacao</span>
+                <span class="method-start">39 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">teste3classeRetorno</span>
+                <span class="method-start">54 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">teste4classeRetorno</span>
+                <span class="method-start">58 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verdadeiroFalso</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">br.com.projeto.tests.TesteClasse2</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">antesClasse</span>
-                <span class="method-start">28 ms</span>
+                <span class="method-start">70 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">teste1Classe2</span>
-                <span class="method-start">42 ms</span>
+                <span class="method-start">71 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">teste2Classe2</span>
-                <span class="method-start">53 ms</span>
+                <span class="method-start">75 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">teste3Classe2</span>
-                <span class="method-start">57 ms</span>
+                <span class="method-start">80 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">teste4Classe2</span>
-                <span class="method-start">60 ms</span>
+                <span class="method-start">84 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">depoisClasse</span>
-                <span class="method-start">64 ms</span>
+                <span class="method-start">88 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">br.com.projeto.tests.Testes</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">antesClasse</span>
-                <span class="method-start">67 ms</span>
+                <span class="method-start">89 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">antesMetodo</span>
-                <span class="method-start">68 ms</span>
+                <span class="method-start">90 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">teste1</span>
-                <span class="method-start">69 ms</span>
+                <span class="method-start">91 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">depoisMetodo</span>
-                <span class="method-start">74 ms</span>
+                <span class="method-start">94 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">antesMetodo</span>
-                <span class="method-start">75 ms</span>
+                <span class="method-start">96 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">teste2</span>
-                <span class="method-start">76 ms</span>
+                <span class="method-start">97 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">depoisMetodo</span>
-                <span class="method-start">80 ms</span>
+                <span class="method-start">100 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">antesMetodo</span>
-                <span class="method-start">81 ms</span>
+                <span class="method-start">103 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">teste4</span>
-                <span class="method-start">82 ms</span>
+                <span class="method-start">103 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">depoisMetodo</span>
-                <span class="method-start">86 ms</span>
+                <span class="method-start">108 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">depoisClasse</span>
-                <span class="method-start">88 ms</span>
+                <span class="method-start">109 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">depoisTodosTestes</span>
-                <span class="method-start">89 ms</span>
+                <span class="method-start">109 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
