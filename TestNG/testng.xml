@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite de TestNG">
+<suite name="Suite de TestNG" allow-return-values="true">
+
+<test name="Regressao">
+ <groups>
+ 
+ 	<define name="testes-normais">
+ 		<include name="testes-unitario"></include>
+ 	</define>
+ 	
+ 	<define name="outros-testes">
+ 		<include name=".*uncional"></include>
+ 		<include name=".*integracao"></include>
+ 	</define>
+ 	
+ 	<define name="todos-testes">
+ 		<include name="testes-normais"></include>
+ 		<include name="outros-testes"></include>
+ 	</define>
+ 	
+ 	<run>
+ 		<include name="todos-testes"></include>
+ 	</run>
+ 	
+ </groups>
+
+ <packages>
+ 	<package name="br.com.projeto.*"></package>
+ </packages>
+</test>
+
+
+
+<!--
+
+
+<test name="Teste Metodos">
+	<classes>
+		<class name="br.com.projeto.testesRetorno.TestesRetorno"></class>
+	</classes>
+</test>
+
+
+
 
 	<test name="Plano de test de grupos">
 		<groups>
@@ -17,7 +59,7 @@
 
 
 
-<!--
+
 	<test name="Plano de test de grupos">
 		<groups>
 			<run>
